@@ -1,5 +1,5 @@
 describe('fromWhereFunction' , function(){
-    it('based on the data given on each vehicle, the relevant questions pertaining to each vehicle should be answered, eg. What is the most popular car and model? ', function(){
+    it('based on the data given on each vehicle, the relevant questions pertaining to each vehicle should be answered, eg. What is the most popular car and model? Where can the most blue cars be found? What is the most popular car in Stellenbosch?  ', function(){
 
         var cars = [ {
             "color": "white",
@@ -159,6 +159,9 @@ describe('fromWhereFunction' , function(){
           }]
           assert.equal(mostPopularCar(cars), 'Toyota');
           assert.equal(mostPopularModel(cars), 'Corolla');
+          //assert.equal(mostPopularColor('Bellville'), 'white');
+          assert.equal(mostBlueCars(cars), 'CA');
+          assert.equal(mostPopularCL(cars), 'Polo');
         
     });
 

@@ -33,6 +33,22 @@ describe('itemsOver20Function' , function(){
         
     });
 
+    it('it should return all the products with a qty higher than 20 ', function(){
+        var itemList = [
+            {name : 'sandals', qty : 0},
+            {name : 'sneakers', qty : 0},
+            {name : 'heels', qty : 0},
+            {name : 'boots', qty : 0},
+        ];
+        
+      
+        var results = [
+        
+        ];
+
+        assert.deepEqual(results, findItemsOver20(itemList));
+})
+
    console.log('findItemsOver20 passed!')
 
-});
+})
